@@ -34,7 +34,7 @@ h4 {color: #006aa7;}
 body {
 	background: #f1f3f2;
 	font-family: Helvetica,arial,sans-serif;
-    color:#666;
+	color:#666;
 	font-size: 12px;
 	line-height: 18px;
 }
@@ -71,6 +71,16 @@ a img {border: 0;}
 	padding-top: 53px;
 	position: relative;
 	padding-left: 9px;
+}
+
+.frame #header .slogan h2, .frame #header .slogan h3 {
+  font-family: Arial, sans-serif; text-transform: uppercase;
+}
+.frame #header .slogan h2 {
+  font-size: 2.4em; line-height: 30px;
+}
+.frame #header .slogan h3 {
+  font-size: 1.3em; line-height: 19px;
 }
 
 .frame #header h2 {
@@ -174,24 +184,6 @@ h4 {font-size: 16px;}
 	background: url(images/hover.gif) repeat-x;
 }
 
-/* #navigation li a.home {
-width: 40px;
-}
-USED IN THE SIFR VERSION
-#navigation li a.about {
-width: 50px;
-}
-#navigation li a.services {
-width: 67px;
-}
-#navigation li a.media {
-width: 44px;
-}
-#navigation li a.blog {
-width: 38px;
-}
-*/
-
 #login-nav {
 	float: left;
 	display: inline;
@@ -245,55 +237,44 @@ background: #fff url(images/bottom-bg.gif) repeat-x 0 bottom;
 }
 
 .heading h2 {
+	display: inline;
+	float: left;
+	width: 400px;
+	padding-top: 10px;
 	font-family: Arial, serif;
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: normal;
-	float: left;
-	display: inline;
 	color: #2e2e2e;
 	line-height: 24px;
-	width: 400px;
-	padding-top: 10px;
 }
-	
+
 .heading h3 {
-	font-weight: bold;
-	color: #2e2e2e;
-	width: 470px;
-	float: left;
 	display: inline;
-	text-align: left;
-	line-height: 10px;
-	top: -8px;
 	position: relative;
+	float: left;
+	top: -8px;
+	width: 470px;
+	height: 25px;
+	text-align: left;
+	color: #2e2e2e;
+	font-family: Georgia, Times, serif;
 	text-transform: none;
+	font-size: 1.3em;
+	line-height: 10px;
+	font-weight: normal;
+	letter-spacing: 0px;
 }
 
 .heading h3 span {
 	display: block;
 	position: relative;
 	width: 470px;
-	font-size: 1.5em;
-	line-height: 16px;
-	padding-left: 9px;
-}
-
-.heading h3 {
-	font-family: Georgia, Times, serif;
-	text-transform: none;
 	height: 25px;
-	font-size: 1.3em;
-	font-weight: normal;
-	letter-spacing: 0px;
-}
-
-.heading h3 span {
+	padding-left: 4px;
 	font-size: 18px;
 	font-style: italic;
 	line-height: 28px;
-	height: 25px;
-	padding-left: 4px;
 }
 
 .heading h3.right {
@@ -605,18 +586,18 @@ float: left;
 	margin: 0
 }
 
+/* remove this comment, three rules, and the next comment when buttons have a place to go */
+.buttons {display: none;}
+.heading .shell h3 { vertical-align: middle; width: inherit; margin: 15px auto; text-align: center; }
+.heading .shell h3 span { width: inherit; }
+/* remove ^^ */
+
 .buttons {
 	margin: 0 0 0 auto;
 	width: 440px;
 }
 
-.buttons .last {
-	background: transparent url(images/free_button.gif) no-repeat scroll 0 0;
-	margin-right: 0;
-}
-
 .buttons a {
-	background: transparent url(images/work_button.gif) no-repeat scroll 0 0;
 	color: #FFFFFF;
 	display: inline;
 	float: left;
@@ -633,6 +614,18 @@ float: left;
 	width: 160px;
 	font-family: Helvetica, Arial, sans-serif
 }
+
+.buttons .last {
+	margin-right: 0;
+}
+
+.buttons .graphic {
+	text-indent: -4000px;
+	font-size: 0;
+	line-height: 0;
+}
+#free {	background: transparent url(images/free_button.gif) no-repeat scroll 0 0;}
+#work { background: transparent url(images/work_button.gif) no-repeat scroll 0 0; }
 
 .post {
 	height: 58px;
@@ -700,13 +693,13 @@ float: left;
 	font-family: Helvetica, Arial, sans-serif;
 	padding-top: 25px;
 }
-	
+
 #footer ul.footer_nav li {
 	display: inline;
 	color: #006aa7;
 	margin-right: 30px;
 }
-	
+
 #footer ul.footer_nav li a {
 	color: #006aa7;
 }
@@ -720,7 +713,7 @@ float: left;
 	padding-left: 25px;
 	margin-top: 40px;
 }
-	
+
 .contactform {
 	margin:0px;
 	font-family:Helvetica, Arial, sans-serif;
@@ -777,7 +770,7 @@ float: left;
 	color:#a1a1a1;
 	display: block;
 	margin-bottom: 10px;
-}	
+}
 
 .large_contact {
 	font-family:Helvetica, Arial, sans-serif;

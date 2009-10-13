@@ -124,7 +124,6 @@ h3 {font-size: 18px;}
 h4 {font-size: 16px;}
 
 #right-area {margin: 0 0 0 auto;}
-#contact-info { margin-left: 50px; }
 
 
 /***** Navigation *****/
@@ -134,9 +133,9 @@ h4 {font-size: 16px;}
 	background: url(images/brd.gif) no-repeat 0 32px;
 	float: left;
 	display: inline;
-	padding-top: 28px;
+	padding-top: 32px;
 	padding-left: 8px;
-	margin-left: 128px;
+	margin-left: 350px;
 }
 
 #navigation ul {

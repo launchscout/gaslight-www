@@ -11,36 +11,38 @@
 	display: block;
 	clear: both;
 }
-
+.clear {clear: both;}
 
 /* Isolated Color Section (just font theme colors - no bg colors - no neutral colors) */
-/* To make customizing the theme colors a bit easier, I've isolated all the font-color rules here. No other styling, just the font colors. */
+/* To make customizing the theme colors a bit easier, No other styling, just the font colors. */
 /* All other theme colors (graphics, bgs, etc.) are controlled by images inside the /css/images/ folder. */
+
+.header h3 {color: #bfdced;}
 
 #navigation li a:hover {color: #006aa7;}
 #navigation li a.green {color: #006aa7 !important;}
 #sub-nav li a {color: #bfdced;}
+
 a {color: #006aa7;}
 a:hover {color: #bfdced;}
 .green {color: #006aa7;}
 h4 {color: #006aa7;}
 .heading h2 span {color: #006aa7;}
-.frame #header h3 {color: #bfdced;}
 .buttons a:hover {color: #bfdced}
+
 #footer ul a:hover {color: #bfdced;}
 
 /***** Main Section *****/
 
 body {
 	background: #f1f3f2;
-	font-family: Helvetica,arial,sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	color:#666;
 	font-size: 12px;
 	line-height: 18px;
 }
 
 a {text-decoration: none;}
-
 a img {border: 0;}
 
 .shell {
@@ -48,22 +50,22 @@ a img {border: 0;}
 	margin: 0 auto;
 }
 
-
 /* Header */
-#header {
-	height: 118px;
-	background: url(images/header.gif) repeat-x 0 0;
+.header {
 	overflow: hidden;
 	position: relative;
 	margin-top: 0px;
 }
-
-.frame #header {
+#homepage {
 	height: 350px;
 	background: url(images/header2.gif) repeat-x;
 }
+#secondary {
+	height: 118px;
+	background: url(images/header3.gif) repeat-x;
+}
 
-.frame #header .slogan {
+.header .slogan {
 	background: url(images/creatica.jpg) no-repeat right 0;
 	width: 945px;
 	height: 192px;
@@ -73,17 +75,17 @@ a img {border: 0;}
 	padding-left: 9px;
 }
 
-.frame #header .slogan h2, .frame #header .slogan h3 {
+.header .slogan h2, .header .slogan h3 {
   font-family: Arial, sans-serif; text-transform: uppercase;
 }
-.frame #header .slogan h2 {
+.header .slogan h2 {
   font-size: 2.4em; line-height: 30px;
 }
-.frame #header .slogan h3 {
+.header .slogan h3 {
   font-size: 1.3em; line-height: 19px;
 }
 
-.frame #header h2 {
+.header h2 {
 	font-size: 29px;
 	line-height: 29px;
 	color: #fff;
@@ -96,7 +98,7 @@ a img {border: 0;}
 	font-weight: bold;
 }
 
-.frame #header h3 {
+.header h3 {
 	font-size: 17px;
 	text-transform: uppercase;
 	width: 450px;
@@ -106,16 +108,16 @@ a img {border: 0;}
 	text-align: left;
 }
 
-.frame #header #logo a {
-	background: url(images/gaslight_logo_blue.png);
+#logo a {
+	display: block;
+	position: relative;
+	margin-top: 5px;
 	height: 70px;
-}
-
-.frame #header #logo {
-	padding-top: 0px
+	background: url(images/gaslight_logo_blue.png);
 }
 
 #logo {
+	padding-top: 0px
 	background-image: none;
 	width: 300px;
 	height: 70px;
@@ -123,18 +125,10 @@ a img {border: 0;}
 	display: inline;
 }
 
-#logo a {
-	position: relative;
-	display: block;
-	margin-top: 5px;
-}
-
 h3 {font-size: 18px;}
-
 h4 {font-size: 16px;}
 
 #right-area {margin: 0 0 0 auto;}
-
 
 /***** Navigation *****/
 
@@ -146,12 +140,11 @@ h4 {font-size: 16px;}
 	padding-top: 32px;
 	padding-left: 8px;
 	margin-left: 350px;
+	font-size: 15px;
 }
 
 #navigation ul {
 	list-style-type: none;
-	font-size: 15px;
-	height: 44px;
 }
 
 #navigation li {
@@ -296,28 +289,34 @@ background: #fff url(images/bottom-bg.gif) repeat-x 0 bottom;
 	padding-left: 9px;
 }
 
-.article p {
-	font-size: 13px;
-	padding-bottom: 16px
-}
-
 .article h3 {
 	padding-bottom: 17px;
-	padding-top: 3px;
+	padding-top: 10px;
 	color: #2e2e2e;
 	text-align: left;
 	font-size: 24px;
 }
 
+.article h4 {
+	padding-bottom: 3px;
+	padding-top: 3px;
+}
+
+.article p {
+	font-size: 13px;
+	padding-bottom: 16px
+}
+
 .article ul {
 	list-style-type: none;
 	padding-left: 25px;
+	padding-bottom: 16px;
 }
 
 .article li {
 	background: url(images/bul.gif) no-repeat 0 7px;
 	padding-left: 11px;
-	padding-bottom: 20px;
+	padding-bottom: 2px;
 }
 
 /***** Gallery Specific Styles *****/
@@ -442,68 +441,6 @@ background: #fff url(images/bottom-bg.gif) repeat-x 0 bottom;
 .sidebar-form p strong {
 	color: #000;
 }
-
-/*.contact-form {
-background: url(images/mid.gif) repeat-y;
-width: 295px;
-margin-bottom: 25px
-}
-.contact-form .top {
-background: url(images/grey-top.gif) no-repeat;
-width: 295px;
-}
-.contact-form .bottom {
-background: url(images/btm.gif) no-repeat 0 bottom;
-width: 275px;
-padding-left: 20px;
-padding-bottom: 20px
-}
-.contact-form .bottom h3 {
-font-weight: bold;
-color: #2e2e2e;
-line-height: 16px;
-padding-top: 12px;
-padding-bottom: 15px
-}
-.contact-form .bottom p.desc {
-padding-bottom: 15px;
-line-height: 18px;
-padding-top: 15px
-}
-.contact-form p {
-line-height: 24px;
-}
-.contact-form p strong {
-color: #000;
-}
-.contact-form p span {
-float: right;
-width: 150px;
-background: #fff;
-}
-.contact-form p em {
-font-style: normal;
-text-align: right;
-display: block;
-margin-top: -18px;
-width: 155px;
-padding-left: 91px
-}
-.contact-form .no-border {
-border-bottom: none;
-}
-
-.contact-info p {
-background: url(images/dot.gif) repeat-x 0 16px;
-min-height: 20px;
-margin-right: 5px;
-clear: both;
-}
-.contact-info p strong {
-float: left;
-} */
-
-
 
 /***** Bottom Image Bar *****/
 
@@ -702,6 +639,10 @@ float: left;
 
 #footer ul.footer_nav li a {
 	color: #006aa7;
+}
+#footer ul.footer_nav li a:hover {
+	text-decoration: underline;
+	background-color: #222;
 }
 
 /***** Contact Form *****/

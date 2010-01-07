@@ -55,7 +55,7 @@
 
 	<div class="sidebar-form"><div class="top"><div class="bottom">
 
-	      <h3>Contact Us</h3>
+	      <h3 id="contactus">Contact Us</h3>
 	      <div id="inner_content_left">
 
 		<form action="mailer.php" method="post" class="contactform">
@@ -108,3 +108,18 @@
 </div>
 </body>
 </html>
+
+<script language="JavaScript">
+var message = document.location.href;
+var questionPos = message.indexOf('?');
+if (-1 != questionPos)
+{
+    message = message.substr(questionPos + 1);
+
+    var contactusElem = document.getElementById('contactus');
+    if (contactusElem)
+    {
+        contactusElem.innerHTML = 'Contact Us - <span class="contactusthankyou">' + message + '</span>';
+    }
+}
+</script>

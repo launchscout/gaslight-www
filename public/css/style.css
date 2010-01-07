@@ -44,6 +44,11 @@ body {
 a {text-decoration: none;}
 a img {border: 0;}
 
+.contactusthankyou
+{
+    color: green;
+}
+
 .shell {
 	width: 950px;
 	margin: 0 auto;

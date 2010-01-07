@@ -17,6 +17,6 @@ Remote Address: {$_SERVER['REMOTE_ADDR']}
 MSG;
 
 mail($to, $subject, $msg); 
-header("Location:thankyou.html"); 
+header("Location:index.html?Thankyou"); 
 
 ?>

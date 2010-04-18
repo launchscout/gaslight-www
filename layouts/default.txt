@@ -1,0 +1,78 @@
+---
+extension: html
+filter:    erb
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>GaslightSoftware | Where software development gets hot!</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  </head>
+  <body>
+   <div class="header" id="homepage">
+      
+      <div class="shell">
+        <div id="logo"><a href="index.html"></a></div>
+        <div id="right-area">
+          <div id="navigation">
+	    <ul>
+	      <div id="contact_info">
+	        <span>phone: 513 549 2006</span><br/>
+	        <span><a href="mailto:hello@gaslightsoftware.com">email: hello@gaslightsoftware.com</a></span>
+	      </div>
+	    </ul>
+          </div>
+        </div>
+        
+        <div class="clear"></div>
+        
+        <div class="slogan">
+          <h2>Working software delivered efficiently and effectively!</h2>
+          <h3>put our broad experience to work for you; focusing on your business values</h3>
+        </div>
+      </div>
+    </div>
+    
+    <div id="content">
+
+      <%= @content %>
+
+    </div>
+    <div id="footer">
+      
+      <!-- <div class="footer-container"> -->
+      
+      <!-- 	<ul class="footer_nav"> -->
+      <!-- 		<li><a href="#">home</a></li> -->
+      <!-- 		<li><a href="#">about</a></li> -->
+      <!-- 		<li><a href="#">services</a></li> -->
+      <!-- 		<li><a href="#">portfolio</a></li> -->
+      <!-- 		<li><a href="#">blog</a></li> -->
+      <!-- 	</ul> -->
+      
+      <!-- </div>   -->
+      
+      <div class="footer-legal">
+        <a href="index.html"><img src="css/images/gaslight_logo_white.png" alt="Gaslight Software" /></a><br />
+        <p>Copyright &copy;2010 Gaslight Software, LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script language="JavaScript">
+  var message = document.location.href;
+  var questionPos = message.indexOf('?');
+  if (-1 != questionPos)
+  {
+      message = message.substr(questionPos + 1);
+
+      var contactusElem = document.getElementById('contactus');
+      if (contactusElem)
+      {
+          contactusElem.innerHTML = 'Contact Us - <span class="contactusthankyou">' + message + '</span>';
+      }
+  }
+</script>

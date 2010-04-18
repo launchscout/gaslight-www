@@ -1,0 +1,23 @@
+
+SITE.user = "gaslight"
+SITE.host = "stage.budgetsketch.com"
+SITE.port = 1970
+SITE.remote_dir = "/var/www/stage.gaslightsoftware.com/releases/webby/public"
+
+task :default => :build
+
+desc 'deploy the site to the webserver'
+task :deploy => ['deploy:clean', :build, 'deploy:rcp']
+
+namespace :deploy do
+
+  desc 'deploy files using rcp'
+  task :rcp do
+    system "scp -P #{SITE.port} -r output #{SITE.user}@#{SITE.host}:#{SITE.remote_dir}"
+  end
+
+  desc 'clean the output folder'
+  task :clean do
+    system "rm -rf output"
+  end
+end

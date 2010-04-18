@@ -1,0 +1,75 @@
+---
+title:       Home
+created_at:  2008-08-02 14:06:40.000000 -06:00
+filter:
+  - erb
+---
+
+    <div class="heading">
+      <div class="shell">
+        <h3><span>We're leading agile practitioners with a track record of
+            value-driven software and high code quality.</span></h3>
+        <div class="buttons">
+	  <a href="how-we-work.html" id="work" class="graphic">How We Work</a>
+	  <a href="free-consultation.html" id="free" class="graphic last">Free Consultation</a>
+        </div>
+      </div>
+    </div>
+    <div class="shell">
+      <div id="main">
+        <div class="article">
+	  <h3>Who is Gaslight Software?</h3>
+	  <h4>A Cincinnati based Software Development Cooperative</h4>
+	  <p>Gaslight Software is a group of independent developers who have formed a strong
+            bond of trust through many years of close association.  We are formalizing our ad hoc
+            relationship into a single working entity that can focus on delivering consistent results.</p>
+	  <h4>Highly Skilled Developers</h4>
+	  <p>Each of us has honed our craft through practical application. We've grown with the industry. 
+            We have a history of multiple languages, environments and a mastery of the best technologies.</p>
+	  <h4>Leading Agile Practitioners</h4>
+	  <p>Yes, we've read the books.  Some of us have even had some training. More than that, we've
+            lived agile projects. We've been on agile teams.  We've led agile teams.  We've introduced agile
+            to big organizations. We've been there and done that so many times our whole wardrobe is made
+            up of agile tee shirts.</p>
+          <p>More than just doing, we're leading the way.  You'll see us presenting in local users' groups.  
+            You'll see us presenting at national conferences. You can read our writings and see how we're
+            thinking and shaping our industry around us.</p>
+	  <p>Let us put all this experience to work for you.  We're not just made up of trendy buzzwords.
+            We know what works. We know how to make software projects successful. We can help make
+            your project successful.</p>
+        </div>
+        <div class="rightside">
+          
+	  <div class="sidebar-form"><div class="top"><div class="bottom">
+                
+	        <h3 id="contactus">Contact Us</h3>
+	        <div id="inner_content_left">
+                  
+		  <form action="mailer.php" method="post" class="contactform">
+                    
+		    <span class="large_contact">name</span>
+		    <span class="small_contact">Please enter your full name</span>
+		    <input name="from" type="text" value="" class="input-textarea"/>
+                    
+                    
+		    <span class="large_contact">email</span>
+		    <span class="small_contact">Please enter a valid email address</span>
+		    <input name="contact" type="text" value="" class="input-textarea"/>
+                    
+                    
+		    <span class="large_contact">message</span>
+		    <span class="small_contact">Please enter your message</span>
+		    <textarea name="message" cols="8" rows="8"></textarea>
+                    
+		    <br />
+                    
+		    <input name="Submit" type="submit" value="" class="input-submit"/>
+                    
+		  </form>
+                  
+	        </div>
+	      </div></div></div>
+        </div>
+        <div class="cl">&nbsp;</div>
+      </div>
+    </div>

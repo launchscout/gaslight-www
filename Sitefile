@@ -2,25 +2,30 @@
 SITE.user = "gaslight"
 SITE.host = "stage.budgetsketch.com"
 SITE.port = 1970
-# SITE.remote_dir = "/var/www/stage.gaslightsoftware.com/releases/webby/public"
+SITE.remote_dir_staging = "/var/www/stage.gaslightsoftware.com/releases/webby/public"
+SITE.remote_dir_production = "/var/www/www.gaslightsoftware.com"
 
 task :default => :build
 
 namespace :deploy do
 
   task :staging do
-    SITE.remote_dir = "/var/www/stage.gaslightsoftware.com/releases/webby/public"
-    ["deploy:clean",:build,"deploy:rcp"].each { |task| Rake::Task[task].execute() }
+    
+    puts "Removing remote deployment dir"        
+    system "ssh #{SITE.user}@#{SITE.host} -p #{SITE.port}  'rm -rf #{SITE.remote_dir_staging}'"
+    
+    ["deploy:clean",:build].each { |task| Rake::Task[task].execute() }
+c 
+    system "scp -p -r -P #{SITE.port} output #{SITE.user}@#{SITE.host}:#{SITE.remote_dir_staging}"
+    puts "Deployed to '#{SITE.user}@#{SITE.host}:#{SITE.remote_dir_staging}'"
   end
   
   task :production do
-    SITE.remote_dir = "/var/www/www.gaslightsoftware.com"
-    ["deploy:clean",:build,"deploy:rcp"].each { |task| Rake::Task[task].execute() }
-  end
 
-  desc 'deploy files using rcp'
-  task :rcp do
-    system "scp -P #{SITE.port} -r output #{SITE.user}@#{SITE.host}:#{SITE.remote_dir}"
+    system "ssh #{SITE.user}@#{SITE.host} -p #{SITE.port} 'cp -rfp #{SITE.remote_dir_staging}/*  #{SITE.remote_dir_production}'"
+
+    puts "Deployed from '#{SITE.user}@#{SITE.host}:#{SITE.remote_dir_staging}'"
+    puts "         to   '#{SITE.user}@#{SITE.host}:#{SITE.remote_dir_production}'"
   end
 
   desc 'clean the output folder'

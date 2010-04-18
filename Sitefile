@@ -2,14 +2,21 @@
 SITE.user = "gaslight"
 SITE.host = "stage.budgetsketch.com"
 SITE.port = 1970
-SITE.remote_dir = "/var/www/stage.gaslightsoftware.com/releases/webby/public"
+# SITE.remote_dir = "/var/www/stage.gaslightsoftware.com/releases/webby/public"
 
 task :default => :build
 
-desc 'deploy the site to the webserver'
-task :deploy => ['deploy:clean', :build, 'deploy:rcp']
-
 namespace :deploy do
+
+  task :staging do
+    SITE.remote_dir = "/var/www/stage.gaslightsoftware.com/releases/webby/public"
+    ["deploy:clean",:build,"deploy:rcp"].each { |task| Rake::Task[task].execute() }
+  end
+  
+  task :production do
+    SITE.remote_dir = "/var/www/www.gaslightsoftware.com"
+    ["deploy:clean",:build,"deploy:rcp"].each { |task| Rake::Task[task].execute() }
+  end
 
   desc 'deploy files using rcp'
   task :rcp do

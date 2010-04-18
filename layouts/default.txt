@@ -18,22 +18,23 @@ filter:    erb
         <div id="right-area">
           <div id="navigation">
 	    <ul>
-	      <div id="contact_info">
-	        <span>phone: 513 549 2006</span><br/>
-	        <span><a href="mailto:hello@gaslightsoftware.com">email: hello@gaslightsoftware.com</a></span>
-	      </div>
-	    </ul>
-          </div>
+              <li><a href="/">home</a></li>
+              <!--         <li><a href="/about">about us</a></li> -->
+              <!-- 	      <li><a href="/portfolio">portfolio</a></li> -->
+              <!-- 	      <li><a href="/services">services</a></li> -->
+              <li id="login-nav"></li>
+   	    </ul>
+        </div>
         </div>
         
         <div class="clear"></div>
         
         <div class="slogan">
-          <h2>Working software delivered efficiently and effectively!</h2>
+          <h2>Great software delivered efficiently and effectively!</h2>
           <h3>put our broad experience to work for you; focusing on your business values</h3>
         </div>
       </div>
-    </div>
+   </div>
     
     <div id="content">
 
@@ -41,19 +42,16 @@ filter:    erb
 
     </div>
     <div id="footer">
-      
-      <!-- <div class="footer-container"> -->
-      
-      <!-- 	<ul class="footer_nav"> -->
-      <!-- 		<li><a href="#">home</a></li> -->
-      <!-- 		<li><a href="#">about</a></li> -->
-      <!-- 		<li><a href="#">services</a></li> -->
-      <!-- 		<li><a href="#">portfolio</a></li> -->
-      <!-- 		<li><a href="#">blog</a></li> -->
-      <!-- 	</ul> -->
-      
-      <!-- </div>   -->
-      
+
+      <div class="footer-container">
+        <ul class="footer_nav">
+          <li><a href="/">home</a></li>
+          <!--           <li><a href="/about">about us</a></li> -->
+          <!--           <li><a href="/portfolio">portfolio</a></li> -->
+          <!--           <li><a href="/services">services</a></li> -->
+          <!--           <li><a href="#">blog</a></li> -->
+        </ul>
+      </div> 
       <div class="footer-legal">
         <a href="index.html"><img src="css/images/gaslight_logo_white.png" alt="Gaslight Software" /></a><br />
         <p>Copyright &copy;2010 Gaslight Software, LLC. All rights reserved.</p>

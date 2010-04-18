@@ -9,10 +9,10 @@ filter:
       <div class="shell">
         <h3><span>We're leading agile practitioners with a track record of
             value-driven software and high code quality.</span></h3>
-        <div class="buttons">
-	  <a href="how-we-work.html" id="work" class="graphic">How We Work</a>
-	  <a href="free-consultation.html" id="free" class="graphic last">Free Consultation</a>
-        </div>
+<!--         <div class="buttons"> -->
+<!-- 	  <a href="how-we-work.html" id="work" class="graphic"></a> -->
+<!-- 	  <a href="free-consultation.html" id="free" class="graphic last"></a> -->
+<!--         </div> -->
       </div>
     </div>
     <div class="shell">
@@ -37,13 +37,19 @@ filter:
 	  <p>Let us put all this experience to work for you.  We're not just made up of trendy buzzwords.
             We know what works. We know how to make software projects successful. We can help make
             your project successful.</p>
-        </div>
-        <div class="rightside">
+          <h3>Events</h3>
           
-	  <div class="sidebar-form"><div class="top"><div class="bottom">
+          <p><a target="_blank" href="http://cincydayofagile.org/"><img class="badge" width="175" height="150" src="http://cincydayofagile.com/images/badges/cincyagilecon-logo-speaking.jpg" alt="I am speaking at the Cincinnati Day of Agile Conference" title="I am speaking at the Cincinnati Day of Agile Conference"></a>&nbsp;<a target="_blank" href="http://cincydayofagile.org/"><img class="badge" width="175" height="150" src="http://cincydayofagile.com/images/badges/cincyagilecon-logo-volunteering.jpg" alt="I am volunteering at the Cincinnati Day of Agile Conference" title="I am volunteering at the Cincinnati Day of Agile Conference"></a></p>
+        </div>
+
+        <div class="rightside">
+
+          <div class="sidebar-form">
+            <div class="top">
+              <div class="bottom">
                 
-	        <h3 id="contactus">Contact Us</h3>
-	        <div id="inner_content_left">
+                <h3 id="contactus">Contact Us</h3>
+                <div id="inner_content_left">
                   
 		  <form action="mailer.php" method="post" class="contactform">
                     
@@ -67,9 +73,17 @@ filter:
                     
 		  </form>
                   
-	        </div>
-	      </div></div></div>
+                </div>
+                
+                <div class="contact-info">
+                  <img src="/images/call.png" alt="call" />
+                </div>
+                
+              </div>
+            </div>
+          </div>
         </div>
         <div class="cl">&nbsp;</div>
       </div>
     </div>
+

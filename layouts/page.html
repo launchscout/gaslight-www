@@ -1,0 +1,57 @@
+---
+extension: html
+filter:    erb
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>GaslightSoftware | Where software development gets hot!</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  </head>
+  <body> 
+    
+    <div class="header" id="secondary"> 
+      
+      <div class="shell"> 
+        <div id="logo"><a href="/"></a></div> 
+        <div id="right-area"> 
+          <div id="navigation"> 
+	    <ul> 
+              <li><a href="/">home</a></li> 
+              <!-- 	      <li><a href="/about">about us</a></li> -->
+              <!-- 	      <li><a href="/portfolio">portfolio</a></li> -->
+              <!--         <li><a href="/services">services</a></li>  -->
+	      <li id="login-nav"></li> 
+	    </ul> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+    
+    <div class="clear"></div> 
+    
+    <div id="content"> 
+      
+      <%= @content %>
+      
+    </div>	
+</div> 
+
+<div id="footer"> 
+  <div class="footer-container"> 
+    <ul class="footer_nav"> 
+      <li><a href="/">home</a></li> 
+      <!--       <li><a href="/about">about us</a></li> -->
+      <!--       <li><a href="/portfolio">portfolio</a></li> -->
+      <!--       <li><a href="/services">services</a></li>  -->
+    </ul> 
+  </div> 
+  <div class="footer-legal"> 
+    <a href="index.html"><img src="/images/gaslight_logo_white.png" alt="Gaslight Software" /></a><br /> 
+    <p>Copyright &copy;2010 Gaslight Software, LLC. All rights reserved.</p> 
+  </div> 
+</div> 
+</body> 
+</html> 

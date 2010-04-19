@@ -7,7 +7,7 @@ filter:    erb
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <title>GaslightSoftware | Where software development gets hot!</title>
+    <title>GaslightSoftware | <%= @page.title %></title>
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
   </head>
   <body>

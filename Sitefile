@@ -15,7 +15,7 @@ namespace :deploy do
     system "ssh #{SITE.user}@#{SITE.host} -p #{SITE.port}  'rm -rf #{SITE.remote_dir_staging}'"
     
     ["deploy:clean",:build].each { |task| Rake::Task[task].execute() }
-c 
+
     system "scp -p -r -P #{SITE.port} output #{SITE.user}@#{SITE.host}:#{SITE.remote_dir_staging}"
     puts "Deployed to '#{SITE.user}@#{SITE.host}:#{SITE.remote_dir_staging}'"
   end

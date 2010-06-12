@@ -44,6 +44,7 @@ hr {color:#bdc2b4;text-shadow: 0px -1px -1px #999;}
 }
 
 #top {background: #d4e5ef;height:93px;margin-top:-5px;	border-bottom: 2px solid #bdc2b4;}
+#top-content {width:960px;margin: 0 auto;}
 
 /***** Main Section *****/
 
@@ -86,11 +87,10 @@ a img {border: 0;}
 
 .header .slogan {
 	background: url(/images/macbookpro.png) no-repeat right 15px;
-	width: 1018px;
+	width: 970px;
 	height: 250px;
-	margin: 20px 355px;
-	padding: 53px 0;
-	position: relative;
+	margin: 20px auto;
+	padding: 53px 50px 50px;
 	padding-left: 9px;
 }
 

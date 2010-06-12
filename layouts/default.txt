@@ -29,11 +29,12 @@ filter:    erb
         </div>
         
         <div class="clear"></div>
-        
+        <div id="top-content">
         <div class="slogan">
           <h2>Great software delivered efficiently and effectively!</h2>
           <h3>put our broad experience to work for you; focusing on your business values</h3>
         </div>
+		</div>
       </div>
    </div>
     

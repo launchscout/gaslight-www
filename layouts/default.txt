@@ -11,20 +11,21 @@ filter:    erb
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
   </head>
   <body>
+
    <div class="header" id="homepage">
-      
+      	<div id="top">
       <div class="shell">
-        <div id="logo"><a href="index.html"></a></div>
+        <div id="logo-default"><a href="index.html"></a></div>
         <div id="right-area">
           <div id="navigation">
-	    <ul>
-              <li><a href="/">home</a></li>
-              <!--         <li><a href="/about">about us</a></li> -->
-              <!-- 	      <li><a href="/portfolio">portfolio</a></li> -->
-              <!-- 	      <li><a href="/services">services</a></li> -->
-              <li id="login-nav"></li>
+ 	    <ul>
+<!-->         <li><a href="/">home</a></li>
+          <li><a href="/about.html">about us</a></li>
+          <li><a href="/portfolio.html">portfolio</a></li>
+          <li id="login-nav"></li>-->
    	    </ul>
         </div>
+</div>
         </div>
         
         <div class="clear"></div>
@@ -46,10 +47,9 @@ filter:    erb
       <div class="footer-container">
         <ul class="footer_nav">
           <li><a href="/">home</a></li>
-          <!--           <li><a href="/about">about us</a></li> -->
-          <!--           <li><a href="/portfolio">portfolio</a></li> -->
-          <!--           <li><a href="/services">services</a></li> -->
-          <!--           <li><a href="#">blog</a></li> -->
+          <li><a href="/about">about us</a></li>
+          <li><a href="/portfolio">portfolio</a></li>
+<!-->          <li><a href="/services">services</a></li> -->
         </ul>
       </div> 
       <div class="footer-legal">

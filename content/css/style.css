@@ -22,19 +22,35 @@ a {color: #006aa7;}
 a:hover {color: #bfdced;}
 .blue {color: #006aa7;}
 h4 {color: #006aa7;}
+.subtitle {color:#333;font-size:14px;}
 .heading h2 span {color: #006aa7;}
 .buttons a:hover {color: #bfdced}
+hr {color:#bdc2b4;text-shadow: 0px -1px -1px #999;}
+
 
 #footer ul a:hover {color: #bfdced;}
 
+.work {
+	width: 400px;
+	margin-bottom: 5px;
+	padding: 10px 5px;
+	font-size: 32px;
+	font-weight: normal;
+	color: #006aa7;
+	line-height: 24px;
+	text-align: left;
+	text-shadow: 0px 1px 1px #999;
+	font-family: Helvetica, Arial, sans-serif;	
+}
 
+#top {background: #d4e5ef;height:93px;margin-top:-5px;	border-bottom: 2px solid #bdc2b4;}
 
 /***** Main Section *****/
 
 body {
 	background: #f1f3f2;
 	font-family: Helvetica, Arial, sans-serif;
-	color:#666;
+	color:#333;
 	font-size: 12px;
 	line-height: 18px;
 }
@@ -49,7 +65,7 @@ a img {border: 0;}
 
 .shell {
 	width: 950px;
-	margin: 0 auto;
+	margin: 5px auto;
 }
 
 /* Header */
@@ -59,20 +75,21 @@ a img {border: 0;}
 	margin-top: 0px;
 }
 #homepage {
-	height: 350px;
-	background: url(/images/header2.gif) repeat-x;
+	height: 450px;
+	background: #002439 url(/images/header12.gif) repeat-x 0 25px;
 }
 #secondary {
-	height: 118px;
-	background: url(/images/header3.gif) repeat-x;
+	height: 95px;
+	background: #fff;
+	border-bottom: 10px solid #002439;
 }
 
 .header .slogan {
-	background: url(/images/creatica.jpg) no-repeat right 0;
-	width: 950px;
-	height: 192px;
-	margin-top: 30px;
-	padding-top: 53px;
+	background: url(/images/macbookpro.png) no-repeat right 15px;
+	width: 1018px;
+	height: 250px;
+	margin: 20px 355px;
+	padding: 53px 0;
 	position: relative;
 	padding-left: 9px;
 }
@@ -81,11 +98,13 @@ a img {border: 0;}
   	font-family: Arial, sans-serif; text-transform: uppercase;
 }
 .header .slogan h2 {
-  	font-size: 2.4em; line-height: 30px;
+  	font-size: 2.9em; 
+	line-height: 30px;
+	padding: 20px 0 50px;
 	text-shadow: 3px 3px 3px #000;
 }
 .header .slogan h3 {
-  	font-size: 1.3em; line-height: 19px;
+  	font-size: 1.5em; line-height: 19px;
 }
 
 .header h2 {
@@ -111,18 +130,35 @@ a img {border: 0;}
 	text-align: left;
 }
 
-#logo a {
+#logo-page a {
 	display: block;
 	position: relative;
 	margin-top: 5px;
 	height: 70px;
-	background: url(/images/gaslight_logo_blue.png);
+	background: url(/images/gaslight_software_header_logo_blue.png);
 }
 
-#logo {
+#logo-page {
 	padding-top: 0px;
 	background-image: none;
-	width: 300px;
+	width: 325px;
+	height: 70px;
+	float: left;
+	display: inline;
+}
+
+#logo-default a {
+	display: block;
+	position: relative;
+	margin-top: 10px;
+	height: 70px;
+	background: url(/images/gaslight_software_header_logo_blue.png);
+}
+
+#logo-default {
+	padding-top: 0px;
+	background-image: none;
+	width: 325px;
 	height: 70px;
 	float: left;
 	display: inline;
@@ -140,9 +176,9 @@ h4 {font-size: 16px;}
 	background: url(/images/brd.gif) no-repeat 0 32px;
 	float: right;
 	display: inline;
+	margin-right: 47px;
 	padding-top: 29px;
 	padding-left: 8px;
-	margin-left: 210px;
 	font-size: 15px;
 	text-shadow: 1px 1px 1px #ccc;
 }
@@ -166,7 +202,7 @@ h4 {font-size: 16px;}
 	font-weight: bold;
 	text-align: center;
 	color: #252525;
-	padding: 0 15px;
+	padding: 0 25px;
 	padding-top: 20px;
 	font-family: Helvetica, Arial, sans-serif;
 	width: auto;
@@ -174,11 +210,11 @@ h4 {font-size: 16px;}
 
 #navigation li a:hover {
 	text-decoration: none;
-	background: url(/images/hover.gif) repeat-x
+	background: #f1f1f1;
 }
 
 #navigation li:hover {
-	background: url(/images/hover.gif) repeat-x;
+	background: #f1f1f1;
 }
 
 #login-nav {
@@ -223,28 +259,26 @@ h4 {font-size: 16px;}
 
 /***** Main Content ******/
 
-#content {
-background: #fff url(/images/bottom-bg.gif) repeat-x 0 bottom;
-
-}
+#content {background: #fff url(/images/content-bg.png) repeat-x 0 top; margin: -5px 0;}
 
 .heading {
-	height: 82px;
-	padding-top: 32px;
-	background: url(/images/bg.gif) repeat-x 0 0;
+	height: 80px;
+	padding-top: 15px;
+	background: #002439;
+	border-bottom: 4px solid #bdc2b4;
 }
 
 .heading h2 {
 	display: inline;
 	float: left;
 	width: 400px;
-	padding-top: 10px;
+	padding: 10px 7px;
 	font-size: 37px;
 	font-weight: normal;
 	color: #006aa7;
 	line-height: 24px;
-	text-shadow: 2px 2px 2px #999;
-	font-family: Georgia, Times, serif;
+	text-shadow: 0px 1px 1px #999;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 .heading h3 {
@@ -255,7 +289,7 @@ background: #fff url(/images/bottom-bg.gif) repeat-x 0 bottom;
 	width: 470px;
 	height: 25px;
 	text-align: left;
-	color: #2e2e2e;
+	color: #BFDCED;
 	font-family: Georgia, Times, serif;
 	text-transform: none;
 	font-size: 1.3em;
@@ -280,8 +314,7 @@ background: #fff url(/images/bottom-bg.gif) repeat-x 0 bottom;
 }
 
 #main {
-	background: url(/images/main.gif) no-repeat;
-	padding-top: 27px;
+	padding-top: 25px;
 }
 
 
@@ -607,12 +640,12 @@ background: #fff url(/images/bottom-bg.gif) repeat-x 0 bottom;
 }
 
 .buttons .last {
-	background: transparent url(/images/what_we_do_btn.png) no-repeat scroll 0 0;
+	background: transparent url(/images/our-work-btn.png) no-repeat scroll 0 -5px;
 	margin-right: 0;
 }
 
 .buttons a {
-	background: transparent url(/images/who_we_are_btn.png) no-repeat scroll 0 0;
+	background: transparent url(/images/meet-our-team-btn.png) no-repeat scroll 0 -5px;
 	color: #FFFFFF;
 	display: inline;
 	float: left;
@@ -623,7 +656,7 @@ background: #fff url(/images/bottom-bg.gif) repeat-x 0 bottom;
 	margin-right: 18px;
 	padding-bottom: 4px;
 	padding-left: 50px;
-	padding-top: 12px;
+	padding-top: 15px;
 	text-decoration: none;
 	text-transform: uppercase;
 	width: 160px;
@@ -656,7 +689,7 @@ background: #fff url(/images/bottom-bg.gif) repeat-x 0 bottom;
 /***** Footer *****/
 
 #footer {
-	background-color: #121212;
+	background-color: #002439;
 	border-top-color: #bdc2b4;
 	border-top-style: solid;
 	border-top-width: 2px;
@@ -799,4 +832,53 @@ background: #fff url(/images/bottom-bg.gif) repeat-x 0 bottom;
 
 .example p {
     margin-top: 10px;
+}
+
+/*** Portfolio style rules. ***/
+
+#slideshow {
+	margin:0 70px;
+	width:800px;
+	height:700px;
+	background:transparent;
+	position:relative;
+}
+#slideshow #slidesContainer {
+  margin:0 auto;
+  width:700px;
+  height:700px;
+  overflow:auto; /* allow scrollbar */
+  position:relative;
+}
+#slideshow #slidesContainer .slide {
+  margin:0 auto;
+  width:680px; /* reduce by 20 pixels of #slidesContainer to avoid horizontal scroll */
+  height:700px;
+}
+
+#slideshow p {
+	font-size: 18px; 
+	line-height: 1.25em; 
+	padding-top:10px;
+	padding-bottom:0 !important;
+}
+
+/*** Portfolio control style rules. ***/
+.control {
+  display:block;
+  width:39px;
+  height:500px;
+  text-indent:-10000px;
+  position:absolute;
+  cursor: pointer;
+}
+#leftControl {
+  top:0;
+  left:0;
+  background:transparent url(/images/img/arrow-l.png) no-repeat 0 150px;
+}
+#rightControl {
+  top:0;
+  right:0;
+  background:transparent url(/images/img/arrow-r.png) no-repeat 0 150px;
 }

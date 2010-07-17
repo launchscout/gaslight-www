@@ -38,7 +38,10 @@ filter:
             your project successful.</p>
           <h3>Events</h3>
           
-          <p><a target="_blank" href="http://cincydayofagile.org/"><img class="badge" width="175" height="150" src="http://cincydayofagile.com/images/badges/cincyagilecon-logo-speaking.jpg" alt="I am speaking at the Cincinnati Day of Agile Conference" title="I am speaking at the Cincinnati Day of Agile Conference"></a>&nbsp;<a target="_blank" href="http://cincydayofagile.org/"><img class="badge" width="175" height="150" src="http://cincydayofagile.com/images/badges/cincyagilecon-logo-volunteering.jpg" alt="I am volunteering at the Cincinnati Day of Agile Conference" title="I am volunteering at the Cincinnati Day of Agile Conference"></a></p>
+          <p><a target="_blank" href="http://cincydayofagile.org/"><img class="badge" width="175" height="150" src="http://cincydayofagile.com/images/badges/cincyagilecon-logo-speaking.jpg" alt="I am speaking at the Cincinnati Day of Agile Conference" title="I am speaking at the Cincinnati Day of Agile Conference"></a>&nbsp;
+            <a target="_blank" href="http://cincydayofagile.org/"><img class="badge" width="175" height="150" src="http://cincydayofagile.com/images/badges/cincyagilecon-logo-volunteering.jpg" alt="I am volunteering at the Cincinnati Day of Agile Conference" title="I am volunteering at the Cincinnati Day of Agile Conference"></a>
+            <a target="_blank" href="http://erubycon.com"><img src="images/conferences/jrubyconf_logo.jpg" width="200px" valign="top"/></a>
+          </p>
         </div>
 
         <div class="rightside">

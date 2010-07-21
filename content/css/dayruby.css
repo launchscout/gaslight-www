@@ -1,7 +1,7 @@
 body, html {
 	background-attachment:fixed;
 	background-color: #ccc;
-	background-image:url(/dayruby-images/bg.png);
+	background-image:url(dayruby-images/bg.png);
 	background-position:center top;
 	background-repeat:repeat;
 	color:#6b6a70;
@@ -13,7 +13,7 @@ body, html {
 
 h1 { font-size: 4em; letter-spacing: -1px; margin-top: 0.5em; margin-bottom: 0.5em; }
 h2 { font-size: 1.9em; letter-spacing: -1px; margin-top: 1em; margin-bottom: 0.5em; }
-h3 { font-size: 1.7em; letter-spacing: -0.5px; margin-top: 1em; margin-bottom: 0.2em; color:#b8160c; }
+h3 { font-size: 1.7em; letter-spacing: -0.5px; margin-top: 1em; margin-bottom: 0.2em; color:#832a24; }
 h4 { font-size: 1.5em; letter-spacing: -0.5px; margin-top: 1em; margin-bottom: 0.2em; }
 h5 { font-size: 1.3em; letter-spacing: -0.5px; margin-top: .5em; margin-bottom: 0em; }
 h6 { font-size: 1em; letter-spacing: -0.5px; margin-top: .8em; margin-bottom: 0em; }
@@ -67,7 +67,7 @@ img {border-style: none;}
 	float: left;
 	width: 860px;
 	margin-left: 20px;
-	border-bottom: 4px solid #b8160c;
+	border-bottom: 4px solid #ab3a39;
 }
 
 #navigation ul {
@@ -251,7 +251,7 @@ img {border-style: none;}
 	width: 840px;
 	margin-left: 20px;
 	clear: left;
-	border-top: 2px solid #b8160c;
+	border-top: 2px solid #ab3a39;
 	text-align: right;
 	padding-left: 20px;
 }

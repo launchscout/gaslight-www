@@ -4,33 +4,93 @@ title:       Portfolio
 filter:
   - erb
 ---
-<div id="content">
-  <div class="shell">
-    <div id="main">
-		<h2 class="work" style="margin-left:120px;">Our Work</h2>
-		<p class="subtitle" style="margin-left:128px;padding-bottom:10px;">Our portfolio consists of...[need more content here]</p><hr /><br /> 
-      <div class="article">
-		 <div id="slideshow">
-		    <div id="slidesContainer">
-		      <div class="slide">
-		        <p><a href="#"><img src="images/portfolio/portfolio_photrade_loggedout.jpg" alt="Photrade" /></a></p>
-				<p>A complete facelift on this photo management site resulted in a beautiful new look. We worked with <a target="_blank" href="http://blueflavor.com">Blue Flavor</a> to produce the graphics.</p>
-		      </div>
+	<div class="shell">
+    	<div id="main">
+			<h2 class="work" style="margin-left:5px;">Our Work</h2>
+			<p class="subtitle" style="margin-left:13px;padding-bottom:10px;">Our portfolio consists of...[need more content here]</p><hr /><br /> 
+      	<div class="article">
+			<table class="portfolio">
+			  <tbody>
+			  <tr>
+			    <td class="image"><a href="#"><img src="images/preview.jpg" alt="preview" width="175" height="132" /></a></td>
+			    <td class="description">
+			      <h4>Lorem Ipsem</h4>
+			      <h5>Duis accumsan bibendum</h5>
+			      <p>Aliquam ac urna at dui fermentum tempor. Sed eget ligula lacus. Ut vel quam mauris, congue bibendum magna. Ut commodo, quam vel ultricies vehicula, sapien nulla malesuada tellus, id pharetra justo ipsum vitae ligula. <a href="#">View&nbsp;Site&nbsp;»</a></p>
+			    </td>
+			  </tr>
+			  
+			  <tr>
+			    <td class="image"><a href="#"><img src="images/preview.jpg" alt="preview" width="175" height="132" /></a></td>
+			    <td class="description">
+			      <h4>Lorem Ipsem</h4>
+			      <h5>Duis accumsan bibendum</h5>
+			      <p>Aliquam ac urna at dui fermentum tempor. Sed eget ligula lacus. Ut vel quam mauris, congue bibendum magna. Ut commodo, quam vel ultricies vehicula, sapien nulla malesuada tellus, id pharetra justo ipsum vitae ligula. <a href="#">View&nbsp;Site&nbsp;»</a></p>
+			    </td>
+			  </tr>
+			  
+			  <tr>
+			    <td class="image"><a href="#"><img src="images/preview.jpg" alt="preview" width="175" height="132" /></a></td>
+			    <td class="description">
+			      <h4>Lorem Ipsem</h4>
+			      <h5>Duis accumsan bibendum</h5>
+			      <p>Aliquam ac urna at dui fermentum tempor. Sed eget ligula lacus. Ut vel quam mauris, congue bibendum magna. Ut commodo, quam vel ultricies vehicula, sapien nulla malesuada tellus, id pharetra justo ipsum vitae ligula. <a href="#">View&nbsp;Site&nbsp;»</a></p>
+			    </td>
+			  </tr>
+			  
+			  <tr>
+			    <td class="image"><a href="#"><img src="images/preview.jpg" alt="preview" width="175" height="132" /></a></td>
+			    <td class="description">
+			      <h4>Lorem Ipsem</h4>
+			      <h5>Duis accumsan bibendum</h5>
+			      <p>Aliquam ac urna at dui fermentum tempor. Sed eget ligula lacus. Ut vel quam mauris, congue bibendum magna. Ut commodo, quam vel ultricies vehicula, sapien nulla malesuada tellus, id pharetra justo ipsum vitae ligula. <a href="#">View&nbsp;Site&nbsp;»</a></p>
+			    </td>
+			  </tr> 
+			  </tbody>
+			</table>
+		</div>
 		
-		      <div class="slide">
-		        <p><a href="#"><img src="images/portfolio/portfolio_ccli.jpg" alt="Couple to Couple League" /></a></p>
-		      <p>We developed a web site that would allow customer to search for Couple to Couple League trainings based on geographical proximity and then to register for them.</p>
-		      </div>
-		
-		      <div class="slide">
-		        <p><a href="#"><img src="images/portfolio/portfolio_budgetsketch.jpg" alt="Budget Sketch" /></a></p>
-		      <p>BudgetSketch is an innovative, intuitive tool consumers are using to gain a handle on where their money will go, not where it has gone. Using a first in class proprietary system, BudgetSketch maps out where your money will go as it comes in, instead of simply showing you where it's been spent. Isn’t it time to get intentional with your money?</p>
-		      </div>		
-		
-		      </div>
-		    </div>
-		  </div> 
-      </div>
+        <div class="rightside">
+
+          <div class="sidebar-form">
+            <div class="top">
+              <div class="bottom">
+                
+                <h3 id="contactus">Contact Us</h3>
+                <div id="inner_content_left">
+                  
+		  <form action="mailer.php" method="post" class="contactform">
+                    
+		    <span class="large_contact">name</span>
+		    <span class="small_contact">Please enter your full name</span>
+		    <input name="from" type="text" value="" class="input-textarea"/>
+                    
+                    
+		    <span class="large_contact">email</span>
+		    <span class="small_contact">Please enter a valid email address</span>
+		    <input name="contact" type="text" value="" class="input-textarea"/>
+                    
+                    
+		    <span class="large_contact">message</span>
+		    <span class="small_contact">Please enter your message</span>
+		    <textarea name="message" cols="8" rows="8"></textarea>
+                    
+		    <br />
+                    
+		    <input name="Submit" type="submit" value="" class="input-submit"/>
+                    
+		  </form>
+                  
+                </div>
+                
+                <div class="contact-info">
+                  <img src="/images/call.png" alt="call" />
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
       <div class="cl">&nbsp;</div>
     </div>
 </div>  

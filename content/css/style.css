@@ -317,6 +317,31 @@ h4 {font-size: 16px;}
 	padding-top: 25px;
 }
 
+/*** Content Table for Portfolio ***/
+
+#content table.portfolio {
+  	margin-top: -0.5em; }
+
+#content table.portfolio td {
+	border-bottom: 1px solid #cfccc1;
+	padding-top: 1em;
+	padding-bottom: 0.75em; }
+
+#content table.portfolio td.image {
+  	padding-right: 1em; }
+
+#content table.portfolio td.description h4 {
+	margin-top: 0;
+	margin-bottom: 0; }
+
+#content table.portfolio td.description h5 {
+	color: #88806d;
+	font-size: 90%;
+	margin-top: 0; }
+
+#content table.portfolio td.description p {
+ 	margin-top: 0.5em;
+  	margin-bottom: 0; }
 
 /***** Left Column *****/
 
@@ -487,8 +512,6 @@ h4 {font-size: 16px;}
 .email {
 	background: url(/images/email.png) no-repeat;
 }
-
-
 
 
 /***** Right Column *****/
@@ -832,53 +855,4 @@ h4 {font-size: 16px;}
 
 .example p {
     margin-top: 10px;
-}
-
-/*** Portfolio style rules. ***/
-
-#slideshow {
-	margin:0 70px;
-	width:800px;
-	height:700px;
-	background:transparent;
-	position:relative;
-}
-#slideshow #slidesContainer {
-  margin:0 auto;
-  width:700px;
-  height:700px;
-  overflow:auto; /* allow scrollbar */
-  position:relative;
-}
-#slideshow #slidesContainer .slide {
-  margin:0 auto;
-  width:680px; /* reduce by 20 pixels of #slidesContainer to avoid horizontal scroll */
-  height:700px;
-}
-
-#slideshow p {
-	font-size: 18px; 
-	line-height: 1.25em; 
-	padding-top:10px;
-	padding-bottom:0 !important;
-}
-
-/*** Portfolio control style rules. ***/
-.control {
-  display:block;
-  width:39px;
-  height:500px;
-  text-indent:-10000px;
-  position:absolute;
-  cursor: pointer;
-}
-#leftControl {
-  top:0;
-  left:0;
-  background:transparent url(/images/img/arrow-l.png) no-repeat 0 150px;
-}
-#rightControl {
-  top:0;
-  right:0;
-  background:transparent url(/images/img/arrow-r.png) no-repeat 0 150px;
 }

@@ -661,6 +661,10 @@ h4 {font-size: 16px;}
 	margin: 0 0 0 auto;
 	width: 440px;
 }
+.buttons .cincydayofruby_logo {
+    margin:0px 0px 0px 80px;
+}
+
 /*
 .buttons .last {
 	background: transparent url(/images/our-work-btn.png) no-repeat scroll 0 -5px;

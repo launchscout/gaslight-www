@@ -1,6 +1,6 @@
 
 SITE.user = "gaslight"
-SITE.host = "stage.budgetsketch.com"
+SITE.host = "www.gaslightsoftware.com"
 SITE.port = 1970
 SITE.remote_dir_staging = "/var/www/stage.gaslightsoftware.com/releases/webby/public"
 SITE.remote_dir_production = "/var/www/www.gaslightsoftware.com"

@@ -1,9 +1,9 @@
 body, html {
 	background-attachment:fixed;
-	background-color: #ccc;
+	background-color: #bd0000;
 	background-image:url(/dayruby-images/bg.png);
-	background-position:center top;
-	background-repeat:repeat;
+	background-position:center;
+
 	color:#6b6a70;
 	font-family:Helvetica,Arial,sans-serif;
 	font-size:0.95em;

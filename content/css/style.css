@@ -43,7 +43,7 @@ hr {color:#bdc2b4;text-shadow: 0px -1px -1px #999;}
 	font-family: Helvetica, Arial, sans-serif;	
 }
 
-#top {background: #d4e5ef;height:93px;margin-top:-5px;	border-bottom: 2px solid #bdc2b4;}
+#top {background: #f1f1f1;height:93px;margin-top:-5px;	border-bottom: 2px solid #bdc2b4;}
 #top-content {width:960px;margin: 0 auto;}
 
 /***** Main Section *****/
@@ -81,7 +81,7 @@ a img {border: 0;}
 }
 #secondary {
 	height: 95px;
-	background: #fff;
+	background: #f1f1f1;
 	border-bottom: 10px solid #002439;
 }
 
@@ -172,13 +172,9 @@ h4 {font-size: 16px;}
 /***** Navigation *****/
 
 #navigation {
-	height: 44px;
 	background: url(/images/brd.gif) no-repeat 0 32px;
 	float: right;
 	display: inline;
-	margin-right: 47px;
-	padding-top: 29px;
-	padding-left: 8px;
 	font-size: 15px;
 	text-shadow: 1px 1px 1px #ccc;
 }
@@ -209,12 +205,11 @@ h4 {font-size: 16px;}
 }
 
 #navigation li a:hover {
-	text-decoration: none;
-	background: #f1f1f1;
+	text-decoration: underline;
 }
 
 #navigation li:hover {
-	background: #f1f1f1;
+
 }
 
 #login-nav {
@@ -256,6 +251,17 @@ h4 {font-size: 16px;}
 	color: #fcfcfd;
 }
 
+.homepage-nav {
+	margin-right: 47px;
+	padding-top: 29px;
+	padding-left: 8px;
+}
+.secondary-nav {
+	background: url(/images/brd.gif) no-repeat 0 30px !important;
+	margin-right: 47px;
+	padding-top: 24px;
+	padding-left: 8px;
+}
 
 /***** Main Content ******/
 

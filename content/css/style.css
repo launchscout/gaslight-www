@@ -76,7 +76,7 @@ a img {border: 0;}
 	margin-top: 0px;
 }
 #homepage {
-	height: 450px;
+	height: 400px;
 	background: #002439 url(/images/header12.gif) repeat-x 0 25px;
 }
 #secondary {
@@ -86,8 +86,8 @@ a img {border: 0;}
 }
 
 .header .slogan {
-	background: url(/images/macbookpro.png) no-repeat right 15px;
-	width: 970px;
+	background: url(/images/macbookpro.png) no-repeat right 20px;
+	width: 925px;
 	height: 250px;
 	margin: 20px auto;
 	padding: 53px 50px 50px;

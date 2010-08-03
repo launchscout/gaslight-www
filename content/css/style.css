@@ -252,13 +252,13 @@ h4 {font-size: 16px;}
 }
 
 .homepage-nav {
-	margin-right: 47px;
+	margin-right: 30px;
 	padding-top: 29px;
 	padding-left: 8px;
 }
 .secondary-nav {
 	background: url(/images/brd.gif) no-repeat 0 30px !important;
-	margin-right: 47px;
+	margin-right: 30px;
 	padding-top: 24px;
 	padding-left: 8px;
 }
@@ -477,7 +477,7 @@ h4 {font-size: 16px;}
 }
 
 #aboutus img {
-	padding: 0px 10px 10px 0px;
+	padding: 3px 10px 10px 0px;
 }
 
 #aboutus ul {

@@ -7,19 +7,37 @@ SITE.remote_dir_production = "/var/www/www.gaslightsoftware.com"
 
 task :default => :build
 
+namespace :dor do
+
+  task :all => ['dor:staging', 'dor:production']
+
+  task :production do
+    files=%w[ cincydayofruby.html DayofRuby-SetupInstructions.pdf ]
+    puts "Deploying Day of Ruby files to '#{SITE.user}@#{SITE.host}:#{SITE.remote_dir_production}'"
+    system "scp -p -P #{SITE.port} #{files.map{|f|File.join('content',f)}.join(' ')} #{SITE.user}@#{SITE.host}:#{SITE.remote_dir_production}"
+  end
+
+  task :staging do
+    files=%w[ cincydayofruby.html DayofRuby-SetupInstructions.pdf ]
+    puts "Deploying Day of Ruby files to '#{SITE.user}@#{SITE.host}:#{SITE.remote_dir_staging}'"
+    system "scp -p -P #{SITE.port} #{files.map{|f|File.join('content',f)}.join(' ')} #{SITE.user}@#{SITE.host}:#{SITE.remote_dir_staging}"
+  end
+
+end
+
 namespace :deploy do
 
   task :staging do
-    
-    puts "Removing remote deployment dir"        
+
+    puts "Removing remote deployment dir"
     system "ssh #{SITE.user}@#{SITE.host} -p #{SITE.port}  'rm -rf #{SITE.remote_dir_staging}'"
-    
+
     ["deploy:clean",:build].each { |task| Rake::Task[task].execute() }
 
     system "scp -p -r -P #{SITE.port} output #{SITE.user}@#{SITE.host}:#{SITE.remote_dir_staging}"
     puts "Deployed to '#{SITE.user}@#{SITE.host}:#{SITE.remote_dir_staging}'"
   end
-  
+
   task :production do
 
     system "ssh #{SITE.user}@#{SITE.host} -p #{SITE.port} 'cp -rfp #{SITE.remote_dir_staging}/*  #{SITE.remote_dir_production}'"

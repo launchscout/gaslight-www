@@ -200,6 +200,15 @@ img {border-style: none;}
     font-style:italic;
 }
 
+.schedule table th {
+  text-align: left;
+}
+
+.schedule table th.time,
+.schedule table td.time {
+  text-align: right;
+}
+
 .speaker {
 	width:530px;
 	border-bottom: 1px solid #ccc;

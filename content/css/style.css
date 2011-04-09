@@ -349,6 +349,8 @@ h4 {font-size: 16px;}
  	margin-top: 0.5em;
   	margin-bottom: 0; }
 
+#content .portfolio img {border: 3px solid #999;}
+
 /***** Left Column *****/
 
 .article {

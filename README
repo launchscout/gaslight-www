@@ -3,3 +3,16 @@ Gaslight Software - Main Web Site
 
 This is the public repository of the Gaslight Software website. A simple static html site that uses webby for deployment.
 
+https://github.com/gaslightsoftware/gaslight-www
+
+To run application:
+
+1.) Update local project: git pull
+2.) Run "webby autobuild"
+3.) Only make changes to files in the "Content" folder.  Webby will build the output files.
+
+To Deploy to Staging and Production:
+
+1.) Run "webby deploy:staging" first.  This will take some time to complete.
+2.) Once staging has been deployed, run "webby deploy:production"
+

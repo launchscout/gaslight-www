@@ -39,6 +39,11 @@ filter:
   strong {
     font-weight: bold;
   }
+  #courses { border-collapse: collapse;}
+  #courses td, th {
+     border: 1px solid;
+    padding: 5px;
+  }
 </style>
 
 <div class="shell">
@@ -74,7 +79,7 @@ filter:
 
     <p>This "little language that compiles into JavaScript" has a truly lovely
       syntax for exposing all the awesome than was hiding in javascript the whole
-      time.  We'll expllore all the features that let you shed the noise and let
+      time.  We'll explore all the features that let you shed the noise and let
       the intent of your code come shining through.  We'll cover:</p>
 
     <ul>
@@ -86,8 +91,8 @@ filter:
 
     <h3>Backbone.js</h3>
 
-    <p>Beautiful is well organized code with a clear separation of concerns, and
-      backbone.js gives our front end code a place for everything, with
+    <p>Beautiful code is well organized code with a clear separation of concerns, and
+      backbone.js gives us a place for everything, with
       everything in it's place.  In this part of of the course, we'll learn
       backbone by doing.  We'll gradually build a rich client web application
       (with jasmine specs of course) that gives a chance to use all the pieces of
@@ -100,5 +105,25 @@ filter:
       <li>Controllers</li>
       <li>Integration with server side code</li>
     </ul>
+    
+    <h3>Public Courses</h3>
+    <table id="courses">
+      <thead>
+        <tr>
+          <th>Location</th>
+          <th>Date</th>
+          <th>Cost</th>
+          <th>&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cincinnati, OH</td>
+          <td>September 8-9th, 2011</td>
+          <td>$795</td>
+          <td><a href="http://gaslightsoft.wufoo.com/forms/beautiful-code-with-coffeescript-and-backbone/">Register</a></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>

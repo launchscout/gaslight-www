@@ -1,0 +1,72 @@
+---
+filter: scss
+extension: css
+layout: nil
+---
+$highlighted: #369;
+@import "compass/css3";
+
+#content {
+  float: left;
+  width: 100%; }
+.shell {
+  padding-bottom: 5em; }
+#main {
+  width: 65%;
+  padding-bottom: 5em;
+  float: left; }
+.signup {
+  @include border-radius(5px);
+  float: right;
+  background: lighten($highlighted, 35);
+  padding: 10px;
+  margin-top: 10em;
+  color: #eee;
+  width: 30%; }
+#footer {
+  clear: both; }
+h1 {
+  font: bold normal 32pt/36pt helvetica, arial, serif;
+  span {
+    font: bold 42pt/36pt 'La Belle Aurore', arial, serif;
+    color: $highlighted; } }
+h1, h2 {
+  line-height: 1.25em; }
+h3, p {
+  font-size: 120%;
+  margin: 1em 0; }
+h2 {
+  font-size: 220%;
+  margin: 1em 0 .5em 0;
+  &.tagline {
+    margin: -0.45em 1.75em 0 0;
+    text-align: right;
+    color: #888; } }
+ul {
+  margin-left: 1.5em; }
+strong {
+  color: $highlighted;
+  font-weight: bold; }
+table.courses {
+  width: 100%;
+  font-size: 130%;
+  td, th {
+    padding: 10px; }
+  th {
+    text-align: left;
+    background: #eee;
+    color: #333;
+    font-weight: bold; } }
+
+// Wufoo
+
+div#container {
+  background: transparent;
+  width: 90%; }
+header#header {
+  display: none; }
+p.instruct {
+  display: none; }
+.wufoo form li {
+  padding: 5px;
+  width: 100%; }

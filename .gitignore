@@ -3,3 +3,5 @@
 nbproject
 output
 _site
+vendor/ruby
+.sass-cache

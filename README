@@ -8,8 +8,9 @@ https://github.com/gaslightsoftware/gaslight-www
 To run application:
 
 1.) Update local project: git pull
-2.) Run "webby autobuild"
-3.) Only make changes to files in the "Content" folder.  Webby will build the output files.
+2.) `bundle install`
+3.) Run "webby autobuild"
+4.) Only make changes to files in the "Content" folder.  Webby will build the output files.
 
 To Deploy to Staging and Production:
 

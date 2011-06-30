@@ -57,6 +57,8 @@ Compass.configuration do |config|
   config.sass_dir = File.join('content', 'css' )
 end
 
+::Webby.site.sass_options = {}
+
 Webby::Filters.register :scss do |input, cursor|
   opts = ::Webby.site.sass_options.merge(cursor.page.sass_options || {})
   opts = ::Webby.site.sass_options.merge(:syntax => :scss)

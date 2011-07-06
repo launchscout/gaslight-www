@@ -5,6 +5,7 @@ layout: nil
 ---
 $highlighted: #369;
 @import "compass/css3";
+@import "fancy-buttons";
 
 #content {
   float: left;
@@ -60,3 +61,8 @@ table.courses {
     text-align: left;
     color: #333;
     font-weight: bold; } }
+
+a.fancy {
+  text-align: center;
+  margin: 2em auto;
+  @include fancy-button(#369); }

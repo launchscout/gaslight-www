@@ -52,6 +52,8 @@ end
 
 # Compass
 require 'compass'
+require 'fancy-buttons'
+
 Compass.configuration do |config|
   config.project_path = File.dirname(__FILE__)
   config.sass_dir = File.join('content', 'css' )

@@ -5,3 +5,4 @@ output
 _site
 vendor/ruby
 .sass-cache
+.rvmrc

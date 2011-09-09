@@ -6,3 +6,4 @@ _site
 vendor/ruby
 .sass-cache
 .rvmrc
+.idea
